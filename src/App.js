@@ -1,18 +1,29 @@
-
-import Projects from './Projects'
-import './App.css';
-import 'tachyons'
+import React, { useState } from "react";
+import Navbar from "./Navbar";
+import Projects from "./Projects";
+import { links, social } from "./data";
+import "tachyons";
 
 function App() {
-  return (
-    <div className="App">
-      <header >
-        <h1 className='mt0 i white pa4 bg-light-blue'>DEV JAY'S PROJECTS</h1>
-      </header>
+	const [projects, setProjects] = useState(links);
+	const [header, setHeader] = useState("All");
 
-      <Projects />
-    </div>
-  );
+	const menu = ["All", ...new Set(links.map((link) => link.technology))];
+
+	const handleToggle = (type) => {
+		const filteredProjects = links.filter((project) => {
+			return project.technology === type;
+		});
+		setProjects(filteredProjects);
+		setHeader(type);
+	};
+
+	return (
+		<>
+			<Navbar handleToggle={handleToggle} menu={menu} social={social}></Navbar>
+			<Projects header={header} doneProjects={projects}></Projects>
+		</>
+	);
 }
 
 export default App;
