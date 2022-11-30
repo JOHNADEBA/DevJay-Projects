@@ -1,3 +1,8 @@
+import vue from "./images/vue.png";
+import angular from "./images/angular.png";
+import react from "./images/react.png";
+import html from "./images/html.png";
+
 const Projects = ({ doneProjects, header }) => {
 	return (
 		<>
@@ -19,12 +24,12 @@ const Projects = ({ doneProjects, header }) => {
 								<img
 									src={
 										technology === "react"
-											? "react.png"
+											? react
 											: technology === "vue"
-											? "vue.png"
+											? vue
 											: technology === "angular"
-											? "angular.png"
-											: "html.png"
+											? angular
+											: html
 									}
 									alt="pic"
 								/>

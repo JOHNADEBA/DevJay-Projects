@@ -33,7 +33,14 @@ const Navbar = ({ menu, social, handleToggle }) => {
 						{menu.map((link, index) => {
 							return (
 								<li key={index}>
-									<button onClick={() => handleToggle(link)}>{link}</button>
+									<button
+										onClick={() => {
+											handleToggle(link);
+											toggleLinks();
+										}}
+									>
+										{link}
+									</button>
 								</li>
 							);
 						})}
