@@ -11,11 +11,16 @@ function App() {
 	const menu = ["All", ...new Set(links.map((link) => link.technology))];
 
 	const handleToggle = (type) => {
-		const filteredProjects = links.filter((project) => {
-			return project.technology === type;
-		});
-		setProjects(filteredProjects);
-		setHeader(type);
+		if (type === "All") {
+			setProjects(links);
+			setHeader(type);
+		} else {
+			const filteredProjects = links.filter((project) => {
+				return project.technology === type;
+			});
+			setProjects(filteredProjects);
+			setHeader(type);
+		}
 	};
 
 	return (
