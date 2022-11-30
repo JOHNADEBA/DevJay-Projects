@@ -144,7 +144,7 @@ nav {
 }
 .logo {
 	height: 40px;
-  color:var(--clr-primary-4);;
+	color: var(--clr-primary-4);
 }
 .links button {
 	width: 100%;
@@ -182,12 +182,11 @@ nav {
 	margin: 0 auto;
 	padding-bottom: 5rem;
 	padding-top: 3rem;
- 
 }
 .project {
-  box-shadow:  0 5px 15px var(--clr-primary-4);
+	box-shadow: 0 5px 15px var(--clr-primary-4);
 	border-radius: 0.4rem 0.4rem 0 0;
-  /* border: .01rem solid var(--clr-primary-4); */
+	/* border: .01rem solid var(--clr-primary-4); */
 	position: relative;
 	overflow: hidden;
 }
@@ -279,8 +278,7 @@ nav {
 	}
 }
 @media screen and (max-width: 576px) {
-	
-  .project-info {
-    transform: translateY(0%);
-  }
+	.project-info {
+		transform: translateY(0%);
+	}
 }

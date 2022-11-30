@@ -1,5 +1,36 @@
 import React from 'react';
 import {  FaLinkedin, FaGithub, FaTelegram } from 'react-icons/fa';
+import battery from './images/battery.png'
+import cocktail from './images/cocktail.png'
+import color from './images/color.png'
+import contact from './images/contact.png'
+import digital from './images/digital.png'
+import eCommerce from './images/e-commerce.png'
+import flip from './images/flip.png'
+import jobprofile from './images/jobprofile.png'
+import lorem from './images/lorem.png'
+import movies from './images/movies.png'
+import pagination from './images/pagination.png'
+import quiz from './images/quiz.png'
+import radio from './images/radio.png'
+import randomuser from './images/randomuser.png'
+import restaurant from './images/restaurant.png'
+import reviews from './images/reviews.png'
+import robofriends from './images/robofriends.png'
+import rock from './images/rock.png'
+import shoppingcart from './images/shoppingcart.png'
+import sound from './images/sound.png'
+import spa from './images/spa.png'
+import stripe from './images/stripe.png'
+import switchplay from './images/switchplay.png'
+import temperature from './images/temperature.png'
+import todo from './images/todo.png'
+import tours from './images/tours.png'
+import wordplay from './images/wordplay.png'
+
+
+
+
 export const links = [
 	{
 		id: "1",
@@ -7,6 +38,7 @@ export const links = [
 		github: "https://github.com/JOHNADEBA/tmdb",
 		title: "Movies",
 		tools: "vue js, tmdb",
+		image:movies,
 		technology: "vue",
 	},
 	{
@@ -15,12 +47,14 @@ export const links = [
 		github: "https://github.com/JOHNADEBA/tours",
 		title: "Tours",
 		tools: "REACT",
+		image:tours,
 		technology: "react",
 	},
 	{
 		id: "3",
 		link: "https://mystripe.netlify.app",
 		tools: "REACT",
+		image:stripe,
 		technology: "react",
 		github: "https://github.com/JOHNADEBA/stripe-ui",
 		title: "Stripe UI",
@@ -29,14 +63,16 @@ export const links = [
 		id: "4",
 		link: "https://devjayshoppingcart.netlify.app",
 		tools: "REACT",
+		image:shoppingcart,
 		technology: "react",
 		github: "https://github.com/JOHNADEBA/shoppingcart",
-		title: "SHopping Cart",
+		title: "Shopping Cart",
 	},
 	{
 		id: "5",
 		link: "https://myusersreviews.netlify.app",
 		tools: "REACT",
+		image:reviews,
 		technology: "react",
 		github: "https://github.com/JOHNADEBA/users-reviews",
 		title: "REVIEWS",
@@ -45,6 +81,7 @@ export const links = [
 		id: "6",
 		link: "https://devjayrandomuser.netlify.app",
 		tools: "REACT",
+		image:randomuser,
 		technology: "react",
 		github: "https://github.com/JOHNADEBA/random-user",
 		title: "Random User",
@@ -53,6 +90,7 @@ export const links = [
 		id: "7",
 		link: "https://devjayquiz.netlify.app",
 		tools: "REACT",
+		image:quiz,
 		technology: "react",
 		github: "https://github.com/JOHNADEBA/quiz",
 		title: "Quiz",
@@ -61,6 +99,7 @@ export const links = [
 		id: "8",
 		link: "https://myjobprofile.netlify.app",
 		tools: "REACT",
+		image:jobprofile,
 		technology: "react",
 		github: "https://github.com/JOHNADEBA/job-profile",
 		title: "Profile",
@@ -69,6 +108,7 @@ export const links = [
 		id: "9",
 		link: "https://devjaypagination.netlify.app",
 		tools: "REACT",
+		image:pagination,
 		technology: "react",
 		github: "https://github.com/JOHNADEBA/pagination",
 		title: "Pagination",
@@ -77,6 +117,7 @@ export const links = [
 		id: "10",
 		link: "https://myrestaurantmenu.netlify.app",
 		tools: "REACT",
+		image:restaurant,
 		technology: "react",
 		github: "https://github.com/JOHNADEBA/restaurant-menu",
 		title: "Restaurant Menu",
@@ -85,6 +126,7 @@ export const links = [
 		id: "11",
 		link: "https://myloremgenerate.netlify.app",
 		tools: "REACT",
+		image:lorem,
 		technology: "react",
 		github: "https://github.com/JOHNADEBA/lorem-generate",
 		title: "Lorem Generator",
@@ -93,6 +135,7 @@ export const links = [
 		id: "12",
 		link: "https://devjayoffice.netlify.app",
 		tools: "ANGULAR",
+		image:switchplay,
 		technology: "angular",
 		github: "https://github.com/JOHNADEBA/angularSmartAccordion",
 		title: "Switch Play",
@@ -101,6 +144,7 @@ export const links = [
 		id: "13",
 		link: "https://jaycocktail.netlify.app",
 		tools: "REACT",
+		image:cocktail,
 		technology: "react",
 		github: "https://github.com/JOHNADEBA/cocktailmenu",
 		title: "Cocktails Menu",
@@ -111,6 +155,7 @@ export const links = [
 		tools: "REACT",
 		github: "https://github.com/JOHNADEBA/React-js-TodoList",
 		title: "Simple TodoList",
+		image:todo,
 		technology: "react",
 	},
 	{
@@ -119,6 +164,7 @@ export const links = [
 		github: "https://github.com/JOHNADEBA/cloned-radio-station-website",
 		title: "Radio Fm",
 		tools: "REACT",
+		image:radio,
 		technology: "react",
 	},
 	{
@@ -127,13 +173,15 @@ export const links = [
 	    github:'https://github.com/JOHNADEBA/spa',
 	    title: 'Spa Website',
 	    tools: 'html',
-	    technology: 'react',
+	    image:spa,
+		technology: 'react',
 
 	},
 	{
 		id: "17",
 		link: "https://devjayflipcard.netlify.app/",
 		tools: "HTML, CSS, JAVASCRIPT",
+		image:flip,
 		technology: "html",
 		title: "FlipCard",
 		github: "https://github.com/JOHNADEBA/flipcard",
@@ -144,12 +192,14 @@ export const links = [
 		github: "https://github.com/JOHNADEBA/12-React-js-projects/blob/master/src/Colors.js",
 		title: "Colour Picker",
 		tools: "REACT",
+		image:color,
 		technology: "react",
 	},
 	{
 		id: "19",
 		link: "https://robofrenz.netlify.app/",
 		tools: "REACT",
+		image:robofriends,
 		technology: "react",
 		title: "Robot Friends",
 		github: "https://github.com/JOHNADEBA/Robots-search",
@@ -158,6 +208,7 @@ export const links = [
 		id: "20",
 		link: "https://wordplaygame.netlify.app/",
 		tools: "HTML, CSS, JAVASCRIPT",
+		image:wordplay,
 		technology: "html",
 		title: "Word Play",
 		github: "https://github.com/JOHNADEBA/Word-Beater",
@@ -166,6 +217,7 @@ export const links = [
 		id: "21",
 		link: "https://tempconvata.netlify.app/",
 		tools: "HTML, CSS, JAVASCRIPT",
+		image:temperature,
 		technology: "html",
 		title: "Temperature Converter",
 		github: "https://github.com/JOHNADEBA/Temperature-Converter",
@@ -174,7 +226,8 @@ export const links = [
         id:'22',
         link: 'https://rokpepasiszo.netlify.app/',
         tools: 'HTML, CSS, JAVASCRIPT',
-        technology: 'html',
+        image:rock,
+		technology: 'html',
         title: 'Rock, Paper, Scissor',
         github: "https://github.com/JOHNADEBA/Rock-Paper-Scissors",
     },
@@ -182,7 +235,8 @@ export const links = [
         id:'23',
         link: 'https://keyboardsound.netlify.app/',
         tools: 'HTML, CSS, JAVASCRIPT',
-        technology: 'html',
+        image:sound,
+		technology: 'html',
         title: 'Sound Maker',
         github: "https://github.com/JOHNADEBA/music-app",
     },
@@ -191,7 +245,8 @@ export const links = [
         link: 'https://kontactlist.netlify.app/',
         tools: 'HTML, CSS, JAVASCRIPT',
         title: 'Filter ContactList',
-        technology: 'html',
+        image:contact,
+		technology: 'html',
         github: "",
     },
     {
@@ -199,7 +254,8 @@ export const links = [
         link: 'https://devjaydigitalclock.netlify.app/',
         tools: 'HTML, CSS, JAVASCRIPT',
         title: 'Digital Clock',
-        technology: 'html',
+        image:digital,
+		technology: 'html',
         github: "https://github.com/JOHNADEBA/Digital-Clock",
     },
     {
@@ -207,7 +263,8 @@ export const links = [
         link: 'https://chargebattery.netlify.app/',
         tools: 'HTML, CSS, JAVASCRIPT',
         title: 'Battery Charging',
-        technology: 'html',
+        image:battery,
+		technology: 'html',
         github: "https://github.com/JOHNADEBA/Charging-battery",
     },
     {
@@ -215,7 +272,8 @@ export const links = [
         link: 'https://devjayecommerce.netlify.app',
         tools: 'REACT',
         title: 'E-Commerce',
-        technology: 'react',
+        image:eCommerce,
+		technology: 'react',
         github: "https://github.com/JOHNADEBA/e-commerce",
     },
 ];
