@@ -6,8 +6,7 @@ const Projects = ({ doneProjects, header }) => {
 			</h3>
 			<section className="projects">
 				{doneProjects.map((project) => {
-					const { id, link, github, tools, technology, title, image } = project;
-					image !== "" && console.log(image);
+					const { id, link, github, tools, title, image } = project;
 					return (
 						<a
 							target="_blank "
@@ -15,6 +14,7 @@ const Projects = ({ doneProjects, header }) => {
 							href={link}
 							key={id}
 							className="project"
+							
 						>
 							<article>
 								<img src={image} alt="pic" />
